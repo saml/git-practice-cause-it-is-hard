@@ -4,9 +4,12 @@ git_work() {
     name="$1"
     version="$2"
     file_to_edit="$name.txt"
-    date >> "$file_to_edit"
-    git add "$file_to_edit"
-    git commit -m "$name.$version"
+    if (( $# >= 2 ))
+    then
+        date >> "$file_to_edit"
+        git add "$file_to_edit"
+        git commit -m "$name.$version"
+    fi
 }
 
 git_feature_start() {
