@@ -1,4 +1,3 @@
-asdfA
 B
 C
 D
