@@ -1,4 +1,4 @@
-aB
+abB
 feature 1 fix
 C
 D
